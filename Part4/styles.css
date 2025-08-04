@@ -21,6 +21,10 @@ header {
     padding: 1rem;
 }
 
+.login-button {
+	float: right;
+}
+
 nav a {
     color: #fff;
     text-decoration: none;
