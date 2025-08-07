@@ -36,11 +36,51 @@ main {
 }
 
 .place-card {
-	display: flex;
-	text-align: center;
-	align-items: center;
+  border: 1px solid rgba(0, 255, 255, 0.3);
+  border-radius: 15px;
+  padding: 1.5rem;
+  margin: 1rem;
+  background: linear-gradient(145deg, #1e1e2f, #2a2a3d);
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.3), 0 0 5px rgba(0, 255, 255, 0.2) inset;
+  width: 270px;
+  text-align: center;
+  color: #e0f7fa;
+  font-family: 'Orbitron', sans-serif;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.place-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.5), 0 0 10px rgba(0, 255, 255, 0.3) inset;
+}
+
+#places-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  background-color: #121212;
+  padding: 2rem;
 }
 
 .details-button {
-    background-color: orange;
+  background: linear-gradient(90deg, #00ffff, #0088ff);
+  border: 1px solid rgba(0, 255, 255, 0.4);
+  padding: 0.6rem 1.2rem;
+  margin-top: 0.8rem;
+  cursor: pointer;
+  border-radius: 8px;
+  color: #ffffff;
+  font-weight: bold;
+  font-family: 'Orbitron', sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+  transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.details-button:hover {
+  background: linear-gradient(90deg, #00ffff, #00ffcc);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.8);
+  transform: scale(1.05);
 }
